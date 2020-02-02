@@ -34,7 +34,7 @@
       "@app/services": [
         "app/services"
       ],
-      "@app/states*": [
+      "@app/states": [
         "app/states"
       ]
     }
