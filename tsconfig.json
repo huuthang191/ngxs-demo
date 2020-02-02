@@ -1,7 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "src",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
@@ -17,7 +17,27 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@app/actions": [
+        "app/actions"
+      ],
+      "@app/components": [
+        "app/components"
+      ],
+      "@app/components/*": [
+        "app/components/*"
+      ],
+      "@app/models": [
+        "app/models"
+      ],
+      "@app/services": [
+        "app/services"
+      ],
+      "@app/states*": [
+        "app/states"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
